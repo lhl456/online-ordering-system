@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 60%;margin: 0 auto;">
+  <div style="width: 75%;margin: 0 auto;">
     <el-card>
       <el-space direction="vertical" alignment="left" style="width: 100%">
         <el-table ref="tableComponents"

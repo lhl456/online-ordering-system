@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 75%;margin: 0 auto;  display: flex;height: 100vh;background-color:white;">
+  <div style="width: 90%;margin: 0 auto;  display: flex;height: 100vh;background-color:white;">
 
     <el-space direction="vertical" alignment="left" style="width: 100%;padding: 20px">
       <el-tabs v-model="searchForm.productTypeId" @tab-change="getPageListAll">

@@ -1,16 +1,20 @@
 <template>
-  <div style="width: 60%;margin: 0 auto" v-if="info.id">
+  <div style="width: 90%;margin: 0 auto" v-if="info.id">
     <el-card v-if="info.id">
       <el-row :gutter="20">
+        <el-col :span="4">
+
+        </el-col>
         <el-col :span="8">
           <el-carousel indicator-position="outside">
             <el-carousel-item v-for="item in info.imgList.split(',')" :key="item">
-              <el-image :src="item" style="height: 300px; height: 300px;"/>
+              <el-image :src="item" style="height: 300px; weight: 200px;padding-left: 50px"/>
             </el-carousel-item>
           </el-carousel>
         </el-col>
-        <el-col :span="16">
-          <el-space direction="vertical" alignment="left" style="width: 100%">
+
+        <el-col :span="10">
+          <el-space direction="vertical" alignment="left" style="width: 100%;">
             <div>
               <H2>{{ info.name }} </H2>
             </div>
@@ -59,7 +63,7 @@
 
       <el-divider></el-divider>
       <el-tabs v-model="activeName">
-        <el-tab-pane label="图文详情" name="first">
+        <el-tab-pane label="图文详情" name="first" >
           <div v-html="info.intro" style="  margin: 0 auto; width: 75%;"></div>
         </el-tab-pane>
         <el-tab-pane label="评价" name="second">

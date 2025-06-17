@@ -1,14 +1,14 @@
 <template>
   <div style="margin: 0 auto;">
 
-    <div style="width: 70%;margin: 0 auto;margin-top: 20px">
+    <div style="width: 90%;margin: 0 auto;margin-top: 20px">
       <el-space direction="vertical" alignment="left" size="large">
 
         <div style="text-align: center">
           <el-space>
             <el-input v-model="searchName" style="width: 500px" placeholder="吃点啥？" size="large"/>
             <el-button type="primary" icon="Search" @click="search"
-                       style="background-color: RGB(255,15,35);border-color: #909399" size="large">搜索
+                       style="background-color: RGB(255,15,35);border-color: #909399" size="large"><p style="font-size: 20px">搜索</p>
             </el-button>
           </el-space>
         </div>

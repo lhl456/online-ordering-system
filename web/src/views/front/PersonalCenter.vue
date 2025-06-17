@@ -1,8 +1,8 @@
 <template>
-  <div style="width: 75%;margin: 0 auto" :key="activeName">
+  <div style="width: 90%;margin: 0 auto" :key="activeName">
     <el-card>
-      <el-tabs v-model="activeName" tab-position="left">
-        <el-tab-pane label="收货地址" name="shippingAddress">
+      <el-tabs v-model="activeName" tab-position="left" >
+        <el-tab-pane label="收货地址" name="shippingAddress" >
           <ShippingAddress v-if="activeName==='shippingAddress'"></ShippingAddress>
         </el-tab-pane>
 
